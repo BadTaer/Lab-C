@@ -4,13 +4,13 @@
 
 ## Integrantes del grupo
 
-- **Julio Gonzalo Ezequiel AGUIRRE** - Gmail: `[agregar_correo@gmail.com]`
-- **Benjamín Ezequiel MENDIBURU** - Gmail: `benjamendiburuyt@gmail.com`
-- **Jose Emilio SILVA** - Gmail: `[agregar_correo@gmail.com]`
+- **Julio Gonzalo Ezequiel AGUIRRE**
+- **Benjamín Ezequiel MENDIBURU** 
+- **Jose Emilio SILVA**
 
 ## Comision
 
-1.4 *(editar de ser necesario)*
+1.4
 
 ## Descripcion general del sistema
 
