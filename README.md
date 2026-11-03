@@ -1,6 +1,6 @@
 # Lab-C
 
-# [Nombre del Proyecto / Sistema]
+#
 
 ## Integrantes del grupo
 
