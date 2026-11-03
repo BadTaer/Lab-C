@@ -30,11 +30,6 @@
 
 ## Uso de inteligencia artificial
 
-[Detallar aquí cómo se utilizó la inteligencia artificial en el proyecto (por ejemplo: consultas sobre funciones o librerías de C, revisión de la estructura del código, resolución de errores de compilación o formato de salida por consola) y qué herramientas se utilizaron, como Gemini, ChatGPT o GitHub Copilot.]
-
-## Link del video
-
-[Pegar link del video aquí]
 
 ## Link del Github
 
