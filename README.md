@@ -14,24 +14,25 @@
 
 ## Descripcion general del sistema
 
-## Estado actual del proyecto
+## Estado inicial del proyecto
 Versión inicial funcional del menú principal y de la estructura de datos de la misión.
 
 Actualmente el sistema permite:
 
-Cargar los parámetros definidos por el enunciado.
-Ejecutar una simulación básica del ascenso.
-Mostrar un reporte preliminar.
+- Cargar los parámetros definidos por el enunciado.
+- Ejecutar una simulación básica del ascenso.
+- Mostrar un reporte preliminar.
+
 Pendiente de implementación:
 
-Corrección de fórmulas físicas.
-Altitud alcanzada al desacople.
-Altura máxima del vuelo.
-Cálculo de fuerzas G.
-Historial de datos usando arreglos.
-Validaciones de entrada por consola.
-Modularización en archivos .c y .h.
-Generación de reportes más completos.
+- Corrección de fórmulas físicas.
+- Altitud alcanzada al desacople.
+- Altura máxima del vuelo.
+- Cálculo de fuerzas G.
+- Historial de datos usando arreglos.
+- Validaciones de entrada por consola.
+- Modularización en archivos .c y .h.
+- Generación de reportes más completos.
 
 ## Instrucciones de ejecucion
 
@@ -46,6 +47,14 @@ Generación de reportes más completos.
 4. Seguir las instrucciones que muestra el sistema por consola.
 
 ## Uso de inteligencia artificial
+Se utilizó inteligencia artificial como herramienta de apoyo para:
+
+- Detectar errores lógicos y sintácticos.
+- Revisar fórmulas físicas utilizadas en la simulación.
+- Obtener sugerencias de modularización del código.
+- Analizar posibles mejoras en la validación de datos.
+- Generar recomendaciones para el uso de estructuras, arreglos y punteros.
+- Todas las decisiones de diseño, implementación y pruebas fueron realizadas y verificadas por los integrantes del grupo.
 
 ## Link del video
 
