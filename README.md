@@ -7,7 +7,6 @@
 - **Julio Gonzalo Ezequiel AGUIRRE** - Gmail: `[agregar_correo@gmail.com]`
 - **Benjamín Ezequiel MENDIBURU** - Gmail: `benjamendiburuyt@gmail.com`
 - **Jose Emilio SILVA** - Gmail: `[agregar_correo@gmail.com]`
-- **Luciano CASARRUBIA** - Gmail: `[agregar_correo@gmail.com]`
 
 ## Comision
 
