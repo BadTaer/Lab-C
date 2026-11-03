@@ -45,3 +45,4 @@ void misionSimular(Mision *m) {
     printf("Velocidad al apagado de motores: %.2f m/s\n", m->v2);
     printf("Tiempo total de ascenso: %.2f s\n");
 }
+
