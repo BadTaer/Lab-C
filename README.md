@@ -14,6 +14,24 @@
 
 ## Descripcion general del sistema
 
+## Estado actual del proyecto
+Versión inicial funcional del menú principal y de la estructura de datos de la misión.
+
+Actualmente el sistema permite:
+
+Cargar los parámetros definidos por el enunciado.
+Ejecutar una simulación básica del ascenso.
+Mostrar un reporte preliminar.
+Pendiente de implementación:
+
+Corrección de fórmulas físicas.
+Altitud alcanzada al desacople.
+Altura máxima del vuelo.
+Cálculo de fuerzas G.
+Historial de datos usando arreglos.
+Validaciones de entrada por consola.
+Modularización en archivos .c y .h.
+Generación de reportes más completos.
 
 ## Instrucciones de ejecucion
 
