@@ -54,7 +54,7 @@ Se utilizó inteligencia artificial como herramienta de apoyo para:
 - Obtener sugerencias de modularización del código.
 - Analizar posibles mejoras en la validación de datos.
 - Generar recomendaciones para el uso de estructuras, arreglos y punteros.
-- Todas las decisiones de diseño, implementación y pruebas fueron realizadas y verificadas por los integrantes del grupo.
+Todas las decisiones de diseño, implementación y pruebas fueron realizadas y verificadas por los integrantes del grupo.
 
 ## Link del video
 
