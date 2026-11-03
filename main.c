@@ -6,6 +6,7 @@
 #define T1_ENUNCIADO 120.0
 #define A2_ENUNCIADO 12.5
 #define H_ENUNCIADO 160000.0
+
 typedef struct {
     double a1, t1, a2, hObjetivo;
     double v1, y1, v2, t2, tTotal;
