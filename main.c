@@ -18,5 +18,5 @@ void misionCargarEnunciado(Mision *m) {
     m->a2 = A2_ENUNCIADO;
     m->hObjetivo = H_ENUNCIADO;
     m->configurada = 1;
-    printf("\n[datitos] Datos del enunciado cargados.\n");
+    printf("\n[CUIDADO] Datos del enunciado cargados.\n");
 }
