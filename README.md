@@ -14,7 +14,6 @@
 
 ## Descripcion general del sistema
 
-[Agregar aquí la descripción general del sistema desarrollado en C: objetivo del programa, cálculos físicos/matemáticos que realiza y funcionamiento general por consola.]
 
 ## Instrucciones de ejecucion
 
