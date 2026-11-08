@@ -25,12 +25,12 @@ Actualmente el sistema permite:
 
 Pendiente de implementación:
 
-- Corrección de fórmulas físicas.
-- Altitud alcanzada al desacople.
-- Altura máxima del vuelo.
-- Cálculo de fuerzas G.
-- Historial de datos usando arreglos.
-- Validaciones de entrada por consola.
+- Corrección de fórmulas físicas. X
+- Altitud alcanzada al desacople. X
+- Altura máxima del vuelo. X
+- Cálculo de fuerzas G. X
+- Historial de datos usando arreglos. X
+- Validaciones de entrada por consola. X
 - Modularización en archivos .c y .h.
 - Generación de reportes más completos.
 
