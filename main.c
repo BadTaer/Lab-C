@@ -46,3 +46,36 @@ void misionSimular(Mision *m) {
     printf("Tiempo total de ascenso: %.2f s\n");
 }
 
+int main() {
+    Mision mision = {0};
+    int opcion;
+
+    do {
+        printf("\n==========================================\n");
+        printf("  SIMULADOR DE ASCENSO SLS - ARTEMIS II\n");
+        printf("==========================================\n");
+        printf("1. Cargar datos del enunciado\n");
+        printf("2. Ejecutar simulacion\n");
+        printf("0. Salir\n");
+        printf("Seleccione una opcion: ");
+        scanf("%d", &opcion);
+
+        switch (opcion) {
+            case 1:
+                misionCargarEnunciado(&mision);
+                break;
+            case 2:
+                misionSimular(&mision);
+                break;
+            case 0:
+                printf("\nSaliendo del simulador...\n");
+                break;
+            default:
+                printf("\n[ERROR] Opcion invalida.\n");
+                break;
+        }
+    } while (opcion != 0);
+
+    return 0;
+}
+
