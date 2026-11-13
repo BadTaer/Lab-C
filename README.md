@@ -31,7 +31,7 @@ Pendiente de implementación:
 - Cálculo de fuerzas G. X
 - Historial de datos usando arreglos. X
 - Validaciones de entrada por consola. X
-- Modularización en archivos .c y .h.
+- Modularización en archivos .c y .h. X
 - Generación de reportes más completos.
 
 ## Instrucciones de ejecucion
