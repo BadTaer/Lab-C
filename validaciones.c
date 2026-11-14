@@ -1,3 +1,4 @@
+/* validaciones.c - Implementacion del ingreso seguro de datos */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,6 +11,8 @@
 
 /* ---------- Funciones auxiliares (privadas del modulo) ---------- */
 
+/* Lee una linea completa. Devuelve 1 si es valida, 0 si esta vacia o es muy larga.
+   Si se cierra la entrada (Ctrl+D / EOF) termina el programa para evitar bucles infinitos. */
 static int leerLinea(char *buffer, int tam)
 {
     int c;
@@ -30,6 +33,7 @@ static int leerLinea(char *buffer, int tam)
     return valida;
 }
 
+/* Cambia la coma decimal por punto (el usuario puede escribir 12,5) */
 static void comaAPunto(char *texto)
 {
     char *p = strchr(texto, ',');
@@ -38,6 +42,7 @@ static void comaAPunto(char *texto)
     }
 }
 
+/* Verifica que lo que quedo despues del numero sean solo espacios */
 static int soloEspacios(const char *p)
 {
     while (isspace((unsigned char)*p)) {
