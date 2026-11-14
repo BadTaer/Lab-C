@@ -70,4 +70,4 @@ Las sugerencias se revisaron y adaptaron a nuestro código. El equipo comprobó 
 ## Enlaces
 
 - **Repositorio:** https://github.com/BadTaer/Lab-C
-- **Video de presentación:** pendiente de agregar.
+- **Video de presentación:** https://youtu.be/wfTPyD-oFxk
