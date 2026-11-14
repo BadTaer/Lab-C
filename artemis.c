@@ -1,3 +1,4 @@
+/* artemis.c - Logica de la simulacion y calculos fisicos (Escenario 1) */
 #include <stdio.h>
 #include <math.h>
 #include "artemis.h"
@@ -5,18 +6,21 @@
 
 /* ================= Funciones privadas ================= */
 
+/* El desacople debe ocurrir antes de llegar a la altitud objetivo */
 static int datosCoherentes(const Mision *m)
 {
     double y1 = 0.5 * m->a1 * m->t1 * m->t1;
     return y1 < m->hObjetivo;
 }
 
+/* Fase 1: MRUV desde el reposo */
 static void calcularFase1(Mision *m)
 {
     m->v1 = m->a1 * m->t1;
     m->y1 = 0.5 * m->a1 * m->t1 * m->t1;
 }
 
+/* Fase 2: v2^2 = v1^2 + 2*a2*(h - y1) */
 static void calcularFase2(Mision *m)
 {
     m->v2 = sqrt(m->v1 * m->v1 + 2.0 * m->a2 * (m->hObjetivo - m->y1));
@@ -24,6 +28,7 @@ static void calcularFase2(Mision *m)
     m->tTotal = m->t1 + m->t2;
 }
 
+/* Falla de motores: caida libre (tiro vertical hacia arriba) */
 static void calcularCaidaLibre(Mision *m)
 {
     m->hMax = m->hObjetivo + (m->v2 * m->v2) / (2.0 * G_TIERRA);
@@ -58,6 +63,7 @@ static void registrarTelemetria(Mision *m, double t)
         m->cantRegistros++;
     }
 }
+
 /* ================= Funciones publicas ================= */
 
 void misionInicializar(Mision *m)
@@ -107,23 +113,25 @@ void misionSimular(Mision *m)
 {
     double t;
     int i;
-    
+
+    /* 1) Calculos analiticos */
     calcularFase1(m);
     calcularFase2(m);
     calcularCaidaLibre(m);
     calcularAceleracionMaxima(m);
 
+    /* 2) Recorrido por turnos de PASO_TELEMETRIA segundos */
     m->cantRegistros = 0;
     for (t = 0.0; t < m->tTotal; t += PASO_TELEMETRIA) {
         registrarTelemetria(m, t);
     }
-    registrarTelemetria(m, m->tTotal);
+    registrarTelemetria(m, m->tTotal);   /* instante de apagado */
     m->calculada = 1;
 
+    /* 3) Telemetria en pantalla */
     mostrarTitulo("TELEMETRIA DEL ASCENSO");
     printf("%10s %14s %14s %12s\n", "t [s]", "Altitud [m]", "Veloc. [m/s]", "a [m/s^2]");
-    for (i = 0; i < m->cantRegistros; i++) 
-    {
+    for (i = 0; i < m->cantRegistros; i++) {
         printf("%10.1f %14.1f %14.1f %12.2f\n",
                m->registro[i].tiempo, m->registro[i].altitud,
                m->registro[i].velocidad, m->registro[i].aceleracion);
